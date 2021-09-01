@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body{
-    background-color: #d9e6f6;
+   background: url("https://www.significadofacil.com/wp-content/uploads/2019/07/background-1200x675.jpg");
     font-family: sans-serif;
   }
 
