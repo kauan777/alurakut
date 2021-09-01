@@ -178,7 +178,7 @@ export async function getServerSideProps(context) {
   
   
   // // Desestrutro a propriedade que é rotornada do objeto da promise
-  const { isAuthenticated } = await fetch('http://localhost:3000/api/auth', {
+  const { isAuthenticated } = await fetch('https://alurakut-kauancosta.vercel.app/api/auth', {
     headers: {
       Authorization: token
     }
