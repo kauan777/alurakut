@@ -1,6 +1,5 @@
 import { SiteClient } from 'datocms-client'
 
-
 export default async function recebedorDeRequests(request, response) {
 
     if (request.method === "POST") {

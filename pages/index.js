@@ -1,4 +1,3 @@
-
 import MainGrid from '../src/components/MainGrid'
 import nookies from 'nookies'
 import Box from '../src/components/Box'
@@ -9,8 +8,8 @@ import ProfileRelationsBox from '../src/components/ProfileRelationsBox'
 import { Toaster, toast } from 'react-hot-toast'
 
 
+//Componente criado para o parte de Informações do usuario logado
 function ProfileSidebar({ user }) {
-
   return (
     <Box as="aside">
       <img src={`https://github.com/${user}.png`} style={{ borderRadius: "8px" }} />
@@ -173,6 +172,7 @@ export default function Home({githubUser}) {
 }
 
 export async function getServerSideProps(context) {
+
   const cookies = nookies.get(context)
   const token = cookies.USER_TOKEN
   
@@ -195,9 +195,9 @@ export async function getServerSideProps(context) {
     
   }
 
+  // Faço o decode do token para acessar suas informaçoes
   const {githubUser} = jwt.decode(token)
 
-  // Faço o decode do token para acessar suas informaçoes
   return {
     props: {
       // Se o nome da propriedade e valor for o mesmo  posso deixar só um

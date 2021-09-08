@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../src/assets/logogrande.png'
 
 //Hook do Next
 import { useRouter } from 'next/router'
@@ -13,7 +14,7 @@ export default function Login() {
         <main style={{ display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <div className="loginScreen">
                 <section className="logoArea">
-                    <img src="https://alurakut.vercel.app/logo.svg" />
+                    <img src={logo.src} />
 
                     <p><strong>Conecte-se</strong> aos seus amigos e familiares usando recados e mensagens instantâneas</p>
                     <p><strong>Conheça</strong> novas pessoas através de amigos de seus amigos e comunidades</p>

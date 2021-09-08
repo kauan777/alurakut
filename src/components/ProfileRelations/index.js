@@ -60,7 +60,7 @@ export const ProfileRelationsBoxWrapper = styled(Box)`
 
   span#SeeMore{
       font-size: 14px;
-      color: #2e7884;
+      color: #686868;
       text-decoration: none;
       font-weight: 800;
       cursor: pointer;

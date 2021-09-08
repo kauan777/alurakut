@@ -1,5 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import { AlurakutStyles } from '../src/lib/JsMasterCommons'
+
 const GlobalStyle = createGlobalStyle`
   
   *{
@@ -10,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body{
-   background: url("https://www.significadofacil.com/wp-content/uploads/2019/07/background-1200x675.jpg");
+   background: #FF223A;
     font-family: sans-serif;
   }
 
