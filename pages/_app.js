@@ -1,5 +1,5 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import { AlurakutStyles } from '../src/lib/JsMasterCommons'
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { AlurakutStyles } from "../src/lib/JsMasterCommons";
 
 const GlobalStyle = createGlobalStyle`
   
@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body{
-   background: #FF223A;
+   background-image: linear-gradient(120deg, #8C58E0 0%, #0C2B7A 100%) !important;
     font-family: sans-serif;
   }
 
@@ -29,13 +29,13 @@ const GlobalStyle = createGlobalStyle`
 
   ${AlurakutStyles}
 
-`
+`;
 
 const theme = {
   colors: {
-    primary: '#FF223A',
+    primary: "#8C58E0",
   },
-}
+};
 
 export default function App({ Component, pageProps }) {
   return (
@@ -45,5 +45,5 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
